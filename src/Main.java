@@ -5,6 +5,7 @@ public class Main {
         task3();
         task4();
         task5();
+        task6();
     }
     public static void task1 () {
         System.out.println("Задача 1");
@@ -67,6 +68,21 @@ public class Main {
             System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься на аттракционе в сопровождении взрослого.");
         } else if (withoutAnAdult){
             System.out.println("Если возраст ребенка равен " + age + ", то ему можно кататься на аттракционе без сопровождении взрослого.");
+        }
+    }
+    public static void task6 () {
+        System.out.println();
+        System.out.println("Задача 6");
+        int wagonCapacity = 102;
+        int seatPlace = 60;
+        int standingPlace = wagonCapacity - seatPlace;
+        int soldTickets = 110;
+        if (soldTickets>wagonCapacity){
+            System.out.println("Мест нет, все билеты распроданы.");
+        } else if (soldTickets>seatPlace && soldTickets<=wagonCapacity){
+            System.out.println("Остались только стоячие места.");
+        }else {
+            System.out.println("Поздравляем, вам досталось сидячее место!");
         }
     }
 
